@@ -1,0 +1,22 @@
+{
+  "name": "quizmenow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "generate-quiz": "^1.0.0",
+    "pg": "^7.4.3",
+    "sequelize": "^4.37.10"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

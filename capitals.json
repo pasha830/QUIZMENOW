@@ -1,0 +1,35 @@
+[{
+	"question": "1. St. Paul is the capital of which state?",
+	"answers": ["Kansas", "Arkansas", "Minnesota", "Louisiana"],
+	"correctAnswer": 2
+},
+{
+	"question": "2. Which of these is North Carolina's capital?",
+	"answers": ["Topeka", "Raleigh", "Indianapolis", "Olympia"],
+	"correctAnswer": 1
+},
+{
+	"question": "3. Baton Rouge is the capital of which state?",
+	"answers": ["New York", "West Virginia", "Louisiana", "New Hampshire"],
+	"correctAnswer": 2
+},
+{
+	"question": "4. Which of these is Delaware's capital?",
+	"answers": ["Providence", "Boston", "Dover", "Jackson"],
+	"correctAnswer": 2
+},
+{
+	"question": "5. Bismarck is the capital of which state?",
+	"answers": ["Michigan", "Wisconsin", "Missouri", "North Dakota"],
+	"correctAnswer": 3
+},
+{
+	"question": "6. Which of these is Oregon's capital?",
+	"answers": ["Montgomery", "Salem", "Jackson", "Indianapolis"],
+	"correctAnswer": 1
+},
+{
+	"question": "7. Which of these is Idaho's capital?",
+	"answers": ["Denver", "Albany", "Boise", "Little Rock"],
+	"correctAnswer": 2
+}]

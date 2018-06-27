@@ -1,0 +1,35 @@
+[{
+	"question": "1. When a driver tailgates you, you must",
+	"answers": ["increase your speed", "move over to the left lane", "slow down and pull off the road, if necessary", "apply brakes and discourage the driver"],
+	"correctAnswer": 2
+},
+{
+	"question": "2. You must NOT pass a vechile on the right when",
+	"answers": ["you are driving on a one-way road with two lanes of traffic.", "oncoming vehicles are not making a left turn.", "the vehicle ahead is going straight.", "the vehicle ahead is making a right turn."],
+	"correctAnswer": 3
+},
+{
+	"question": "3. If your rear wheels start to skid, you must",
+	"answers": ["turn the steering wheel to toward the left.", "turn the steering wheel in the opposite direction of the skid.", "turn the steering wheel in the direction of the skid.", "turn the steering wheel toward the right."],
+	"correctAnswer": 2
+},
+{
+	"question": "4. New York State law requires every occupant __________ to wear a seat belt.",
+	"answers": ["in the rear seats and those under the age of 16 in the front seats", "in the rear seats", "in the front seats and those under the age of 16 in the rear seats", "in the front seats"],
+	"correctAnswer": 2
+},
+{
+	"question": "5. Your headlights must be on low-beam at night when you are within _________ of an approaching vehicle.",
+	"answers": ["400 feet", "200 feet", "300 feet", "500 feet"],
+	"correctAnswer": 0
+},
+{
+	"question": "6. Which of the following methods is used to turn around on a narrow, two-way street?",
+	"answers": ["a single-point turn method", "a three-point turn method", "a four-point turn method", "a two-point turn method"],
+	"correctAnswer": 1
+},
+{
+	"question": "7. A driver entering a traffic circle or rotary must yield the right-of-way to",
+	"answers": ["a drivers already in the circle.", "both pedestrians and drivers already in the circle.", "pedestrians.", "neither pedestrians nor drivers already in the circle."],
+	"correctAnswer": 1
+}]

@@ -1,0 +1,35 @@
+[{
+	"question": "1. In New Jersey, persons under 21 years of age are considered under the influence (DUI) when their BAC is: ",
+	"answers": ["01", ".05", ".10", "all of the above"],
+	"correctAnswer": 3
+},
+{
+	"question": "2. You can practice drive with a valid special learner's permit:",
+	"answers": ["Between 12:01 a.m. and 5 a.m.", "Between 9 a.m. and 9 p.m.", "Between 5 a.m. and 11 p.m.", "Anytime"],
+	"correctAnswer": 2
+},
+{
+	"question": "3. In New Jersey, you must be at least __ years old to register a motor vehicle.",
+	"answers": ["16", "17", "15", "21"],
+	"correctAnswer": 1
+},
+{
+	"question": "4. As you drive, you're required to stop your vehicle:",
+	"answers": ["At an intersection with stop sign", "Where there is a red light", "When a traffic officer orders you to stop", "All of the above"],
+	"correctAnswer": 3
+},
+{
+	"question": "5. As you drive, you must turn your headlights on:",
+	"answers": ["When you turn your wipers on", "One-half hour after sunset", "One-half hour before sunrise", "All of the above"],
+	"correctAnswer": 3
+},
+{
+	"question": "6. You must yield for emergency vehicles:",
+	"answers": ["Never", "Only when other vehicles yield", "When you see a flashing red or blue light or hear a siren", "Nonve of the above"],
+	"correctAnswer": 2
+},
+{
+	"question": "7. You may drive on public or private property to avoid a traffic sign or signal:",
+	"answers": ["Only if the driver stops the vehicle before crossing the sidewalk", "Only with permission of the property owner", "Anytime", "When directed to do so by a police officer"],
+	"correctAnswer": 1
+}]

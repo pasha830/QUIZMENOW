@@ -1,0 +1,35 @@
+[{
+	"question": "1. What territory did the United States buy from France in 1803?",
+	"answers": ["Alaska", "the Lousiana Territory", "Quebec", "Hawaii"],
+	"correctAnswer": 1
+},
+{
+	"question": "2. What is the political party of the President now?",
+	"answers": ["Independent Party", "Green Party", "Democratic Party", "Republican Party"],
+	"correctAnswer": 3
+},
+{
+	"question": "3. What is the name of the President of the United States now?",
+	"answers": ["Mike Pence", "George W. Bush", "Donald J. Trump", "Barack Obama"],
+	"correctAnswer": 2
+},
+{
+	"question": "4. What is freedom of religion?",
+	"answers": ["You can't choose the time you practice your religion", "You must choose a religion.", "No one can practice a religion.", "You can practice any religion, or not practice a religion."],
+	"correctAnswer": 3
+},
+{
+	"question": "5. We elect a President for how many years?",
+	"answers": ["eight (8)", "four (4)", "two (2)", "ten (10)"],
+	"correctAnswer": 1
+},
+{
+	"question": "6. What are the two ways that Americans can participate in their democracy?",
+	"answers": ["give an elected official your opinion on an issue and join a community group", "vote and join civic group", "write to a newspaper and call Senators and Representatives", "all of these answers"],
+	"correctAnswer": 3
+},
+{
+	"question": "7. What does the Constitution do?",
+	"answers": ["sets up the government", "defines the government", "protects basic rights of Americans", "all of these answers"],
+	"correctAnswer": 3
+}]
