@@ -1,28 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>QUIZMENOW | USA Citizenship Test</title>
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QUIZMENOW | U.S. Citizenship Test</title>
 	<style type="text/css">
-		.popupAnswer{
-			position: absolute;
-			top: 280px;
-			left: 550px;
+		body{
+			font-size: 15px;
+			background-color: gainsboro;
+			font-family: 'Rubik', sans-serif;
 		}
-		.container, .bottom-container{
+		h1{
+			text-align: center; 
+			background: darkblue; 
+			color: white; 
+			padding: 30px; 
+			margin: -10px
+		}
+		.answerDisplay, .resultDisplay{
+			position: fixed;
+			/*top: 320px;
+			left: 500px;*/
+		}
+		.container{
 			position: absolute;
-			width: 80%;
+			width: 50%;
 			margin: 2% 35%;
+		}
+		.bottom-container{
+			text-align: center;
+		}
+		.exit-btn{
+			height: 40px; 
+			width: 100px; 
+			background: black; 
+			color: white;
+			position: fixed;
+			left: 0;
+			right:0;
+		}
+		.exit-btn:hover{
+			background-color: yellow;
+			color: black;
+		}
+		.copyright{
+			font-size: 10px;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 30px;
+		}
+		.quiz-btn{
+			display: inline-block;
+			font-size: 15px;
+			height: 50px;
+			width: 50%;
+			background: orange;
+			border-radius: 15px;
+			cursor: pointer;
+		}
+		.quiz-btn:hover{
+			background-color: black;
+			color: orange;
 		}
 	</style>
 
 </head>
-<body style="font-size: 14px; background: gainsboro">
+<body>
 
-<h1 style="text-align: center; background: darkblue; color: white; padding: 30px; margin: -10px">USA Citizenship Test</h1>
+<h1>U.S. Citizenship Test</h1>
 <br>
-<div class="popupAnswer">
-	<span class="answerDisplay"></span>
-</div>
 	<% for(let i in citizenship) {%>
 	<div class="container">
 		<div class="quiz<%= i %>">
@@ -32,113 +80,38 @@
 				<tr><td>B: <input type="radio" id="B<%= i %>" name="question"><%=  citizenship[i].answers[1] %></td></tr>
 				<tr><td>C: <input type="radio" id="C<%= i %>" name="question"><%=  citizenship[i].answers[2] %></td></tr>
 				<tr><td>D: <input type="radio" id="D<%= i %>" name="question"><%=  citizenship[i].answers[3] %></td></tr>
-				<tr style="display: none"><td>Answer: <input type="radio" id="E<%= i %>"><span id="AE<%= i %>"><%=  citizenship[i].correctAnswer %></td></tr>
+				<tr style="display: none"><td>Answer: <input type="radio" id="E<%= i %>">
+					<span id="AE<%= i %>"><%=  citizenship[i].correctAnswer %></span></td>
+				</tr>
 			</table>
 			<br>
-			<button style="height: 50px; width: 150px; background: orange"id="btn<%= i %>" data-q=<%= i %>>Check My Answer</button>
+			<button class="quiz-btn" id="btn<%= i %>" data-q=<%= i %>>Check My Answer</button>
+			<button class="quiz-btn" id="nextQ<%= i %>" data-q=<%= i %>>Next Question >></button>
 			<br>
-			<button style="height: 50px; width: 150px; background: orange" id="nextQ<%= i %>" data-q=<%= i %>>Next Question>></button>
+			<br>
+			<div class="popupAnswer"><span class="answerDisplay"></span></div>
+			<div class="popupResult"><span class="resultDisplay"></span></div>
+			<br>
+			<br>
+			<br>
+			<br>
+			
 			</div>
 			<br>
 		</div>
 	<% } %>
 
-<br>
-<div class="bottom-container">
-	<div style="text-align: center; position: absolute; top: 450px;">	
-		<form method="get" action="/" style="text-align: center">
-			<button style="height: 40px; width: 150px; background: black; color: white"><strong>Changed My Mind</strong></button>
-		</form>
+	<br>
+	<form method="get" action="/" style="margin-top: -90px">
+		<button class="exit-btn">Exit</button>
+	</form>
+	<br>
+	<div class="bottom-container">	
+		<footer class="copyright">&copy; 2018 QuizMeNow</footer>
 	</div>
-	<br>
-	<br>
-	<footer style="text-align: center; position: absolute; top: 500px">
-		<div class="copyright">&copy; 2018 QuizMeNow</div>
-	</footer>
-</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
 <script type="text/javascript" src="ques_ans.js"></script>
-
-<script>
-var currentQuestion = 0
-var nextQuestion = currentQuestion + 1
-
-for(let i=1; i<7; i++){
-	$('.quiz' + i).hide();
-}
-
-$("#nextQ" + currentQuestion).click(()=>{
-	$('.answerDisplay').html("") 
-	console.log( 'Current Question # '+ currentQuestion)
-	console.log( 'Next Question # '+ currentQuestion)
-	$('.quiz' + currentQuestion).css('top', '-300px')
-	$('.quiz' + currentQuestion).hide()
-	$('.quiz'+ nextQuestion).show()
-	currentQuestion++
-	nextQuestion++
-})
-
-$("#nextQ1").click(()=>{
-	$('.answerDisplay').html("") 
-	console.log( 'Current Question # '+ currentQuestion)
-	console.log( 'Next Question # '+ currentQuestion)
-	$('.quiz' + currentQuestion).css('top', '-300px')
-	$('.quiz' + currentQuestion).hide()
-	$('.quiz'+ nextQuestion).show()
-	currentQuestion++
-	nextQuestion++
-})
-
-$("#nextQ2").click(()=>{
-	$('.answerDisplay').html("") 
-	console.log( 'Current Question # '+ currentQuestion)
-	console.log( 'Next Question # '+ currentQuestion)
-	$('.quiz' + currentQuestion).css('display', 'none')
-	$('.quiz'+ nextQuestion).show()
-	currentQuestion++
-	nextQuestion++
-})
-
-$("#nextQ3").click(()=>{
-	$('.answerDisplay').html("") 
-	console.log( 'Current Question # '+ currentQuestion)
-	console.log( 'Next Question # '+ currentQuestion)
-	$('.quiz' + currentQuestion).hide()
-	$('.quiz'+ nextQuestion).show()
-	currentQuestion++
-	nextQuestion++
-})
-
-$("#nextQ4").click(()=>{
-	$('.answerDisplay').html("") 
-	console.log( 'Current Question # '+ currentQuestion)
-	console.log( 'Next Question # '+ currentQuestion)
-	$('.quiz' + currentQuestion).hide()
-	$('.quiz'+ nextQuestion).show()
-	currentQuestion++
-	nextQuestion++
-})
-
-$("#nextQ5").click(()=>{
-	$('.answerDisplay').html("") 
-	console.log( 'Current Question # '+ currentQuestion)
-	console.log( 'Next Question # '+ currentQuestion)
-	$('.quiz' + currentQuestion).hide()
-	$('.quiz'+ nextQuestion).show()
-	currentQuestion++
-})
-
-$("#nextQ6").click(()=>{
-	$('.answerDisplay').html("") 
-	console.log( 'Current Question # '+ currentQuestion)
-	console.log( 'Next Question # '+ currentQuestion)
-	$('.quiz' + currentQuestion).hide()
-	$('.quiz'+ nextQuestion).show()
-	currentQuestion++
-})
-
-</script>
+<script type="text/javascript" src="current_next_ques.js"></script>
 </body>
 </html>

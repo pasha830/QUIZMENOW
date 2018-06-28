@@ -1,5 +1,6 @@
 var currentQuestion = 0
 var nextQuestion = currentQuestion + 1
+//var Answer = 0
 
 for(let i=1; i<7; i++){
 	$('.quiz' + i).hide();
@@ -7,9 +8,6 @@ for(let i=1; i<7; i++){
 
 $("#nextQ" + currentQuestion).click(()=>{
 	$('.answerDisplay').html("") 
-	console.log( 'Current Question # '+ currentQuestion)
-	console.log( 'Next Question # '+ currentQuestion)
-	$('.quiz' + currentQuestion).css('top', '-300px')
 	$('.quiz' + currentQuestion).hide()
 	$('.quiz'+ nextQuestion).show()
 	currentQuestion++
@@ -18,9 +16,6 @@ $("#nextQ" + currentQuestion).click(()=>{
 
 $("#nextQ1").click(()=>{
 	$('.answerDisplay').html("") 
-	console.log( 'Current Question # '+ currentQuestion)
-	console.log( 'Next Question # '+ currentQuestion)
-	$('.quiz' + currentQuestion).css('top', '-300px')
 	$('.quiz' + currentQuestion).hide()
 	$('.quiz'+ nextQuestion).show()
 	currentQuestion++
@@ -29,9 +24,7 @@ $("#nextQ1").click(()=>{
 
 $("#nextQ2").click(()=>{
 	$('.answerDisplay').html("") 
-	console.log( 'Current Question # '+ currentQuestion)
-	console.log( 'Next Question # '+ currentQuestion)
-	$('.quiz' + currentQuestion).css('display', 'none')
+	$('.quiz' + currentQuestion).hide()
 	$('.quiz'+ nextQuestion).show()
 	currentQuestion++
 	nextQuestion++
@@ -39,8 +32,6 @@ $("#nextQ2").click(()=>{
 
 $("#nextQ3").click(()=>{
 	$('.answerDisplay').html("") 
-	console.log( 'Current Question # '+ currentQuestion)
-	console.log( 'Next Question # '+ currentQuestion)
 	$('.quiz' + currentQuestion).hide()
 	$('.quiz'+ nextQuestion).show()
 	currentQuestion++
@@ -49,8 +40,6 @@ $("#nextQ3").click(()=>{
 
 $("#nextQ4").click(()=>{
 	$('.answerDisplay').html("") 
-	console.log( 'Current Question # '+ currentQuestion)
-	console.log( 'Next Question # '+ currentQuestion)
 	$('.quiz' + currentQuestion).hide()
 	$('.quiz'+ nextQuestion).show()
 	currentQuestion++
@@ -59,18 +48,29 @@ $("#nextQ4").click(()=>{
 
 $("#nextQ5").click(()=>{
 	$('.answerDisplay').html("") 
-	console.log( 'Current Question # '+ currentQuestion)
-	console.log( 'Next Question # '+ currentQuestion)
 	$('.quiz' + currentQuestion).hide()
 	$('.quiz'+ nextQuestion).show()
 	currentQuestion++
+	$('#nextQ6').html("Check Results") 
 })
 
+
+
 $("#nextQ6").click(()=>{
-	$('.answerDisplay').html("") 
-	console.log( 'Current Question # '+ currentQuestion)
-	console.log( 'Next Question # '+ currentQuestion)
+	$('.answerDisplay').hide()
+	//$('.resultDisplay').html("")
 	$('.quiz' + currentQuestion).hide()
 	$('.quiz'+ nextQuestion).show()
-	currentQuestion++
+	$('.resultDisplay').show()
+
+	//currentQuestion++
+	//nextQuestion++
 })
+
+
+// clicking 'check results to display the score'
+
+
+
+
+
