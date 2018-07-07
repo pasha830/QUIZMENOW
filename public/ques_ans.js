@@ -34,7 +34,7 @@ $('#btn0').on('click', ()=>{
 		$('.answerDisplay').css('color', 'green')
 		correctQuestionCount++;
 	}else{
-		$('.answerDisplay').html("WRONG! Did you leave your brain at home? <br> Try again!") 
+		$('.answerDisplay').html("WRONG! Did you leave your brain at home?") 
 		$('.answerDisplay').css('color', 'red')
 	}
 
@@ -82,7 +82,7 @@ if(answers[$('#AE'+q).html()] == option){
 	correctQuestionCount++;
 }else{
 //	alert("You are wrong")
-	$('.answerDisplay').html("Sorry, try again!") 
+	$('.answerDisplay').html("Sorry, that's not correct!") 
 	$('.answerDisplay').css('color', 'red')
 }
 
@@ -127,7 +127,7 @@ if(answers[$('#AE'+q).html()] == option){
 	correctQuestionCount++;
 }else{
 //	alert("You are wrong")
-	$('.answerDisplay').html("Umm...you suck at this quiz! <br> Try again.") 
+	$('.answerDisplay').html("Umm...you suck at this quiz!") 
 	$('.answerDisplay').css('color', 'red')
 }
 
@@ -173,7 +173,7 @@ if(answers[$('#AE'+q).html()] == option){
 	correctQuestionCount++;
 }else{
 //	alert("You are wrong")
-	$('.answerDisplay').html("Maybe go back to school? <br> Try again!") 
+	$('.answerDisplay').html("Maybe go back to school b/c that was wrong!") 
 	$('.answerDisplay').css('color', 'red')
 }
 
