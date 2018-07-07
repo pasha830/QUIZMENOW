@@ -18,5 +18,13 @@
   },
   "devDependencies": {},
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pasha830/QUIZMENOW.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pasha830/QUIZMENOW/issues"
+  },
+  "homepage": "https://github.com/pasha830/QUIZMENOW#readme",
   "description": ""
 }
